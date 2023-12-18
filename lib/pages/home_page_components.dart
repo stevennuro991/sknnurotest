@@ -579,22 +579,23 @@ class CustomBottomNavigationBar extends StatelessWidget {
                 right: 0,
                 child: Container(
                   padding: const EdgeInsets.all(1),
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(6),
-                  ),
-                  constraints: const BoxConstraints(
-                    minWidth: 12,
-                    minHeight: 12,
-                  ),
-                  child: const Text(
-                    '3',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 8,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF9F3131),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(100),
                     ),
                   ),
+                  constraints: const BoxConstraints(
+                    minWidth: 14,
+                    minHeight: 12,
+                  ),
+                  child: Text('3',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        color: Colors.white,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w500,
+                      )),
                 ),
               ),
             ],
